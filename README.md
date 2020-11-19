@@ -19,7 +19,7 @@ To change either of these values, provide the appropriate argument to the gradle
 
 `.\gradlew run --args="port=9443 verbose"`
 
-**Client-Proxy-Endpoint interactions: **
+**Client-Proxy-Endpoint interactions:**
 The following interactions should occur for successful interactions between client & proxy & endpoint:
 - The client application opens a HTTPS connection to the proxy
 - The client sends a CONNECT request to create a HTTP tunnel to a particular endpoint
