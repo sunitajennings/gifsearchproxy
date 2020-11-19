@@ -47,5 +47,11 @@ The following interactions should occur for successful interactions between clie
 
 The client I am using to test is the [Oracle SSLSocketClientWithTunneling class](https://docs.oracle.com/javase/10/security/sample-code-illustrating-secure-socket-connection-client-and-server.htm#GUID-B9103D0C-3E6A-4301-B558-461E4CB23DC9__SSLSOCKETCLIENTWITHTUNNELING.JAVA-32D03DB5) , modified to connect to my localhost proxy port via a SSLSocket.
 
+**Remaining work / next steps:**
+1. Get client-endpoint TLS negotation working through the tunnel
+2. Clean up sockets and other resources, especially under error conditions
+3. Investigate using socket channels for non-blocking communication (would this improve anything?)
+4. Analyze whether my stream handling would work for double-byte languages
+
 
 
