@@ -23,7 +23,7 @@ To change either of these values, provide the appropriate argument to the gradle
 The following interactions should occur for successful interactions between client & proxy & endpoint:
 - The client application opens a HTTPS connection to the proxy
 - The client sends a CONNECT request to create a HTTP tunnel to a particular endpoint
-- If the client sends any other method, the proxy will return 405 Method Not Allowe
+- If the client sends any other method, the proxy will return 405 Method Not Allowed
 - If the endpoint is allowed (listed in src/main/resources/hosts.allow) and the endpoint can be reached, the proxy will return a 200 Connection Established response
 - Currently the only allowed endpoint is api.giphy.com (port 443, implied)
 - If the endpoint is not allowed or cannot be reached, the proxy will return an error (403 Forbidden or 502 Bad Gateway, respectively)
