@@ -2,7 +2,7 @@
 
 This is a proxy server that accepts HTTP CONNECT requests from a client to create a tunnel between the client & the specified endpoint. The tunnel will only be created if the endpoint is a host:port combination found in src/main/resources/hosts.allow.
 
-**Set up: **
+**Set up:**
 The proxy's keystore file and extracted self-signed certificate is found in src/main/resources. You will need to add the certificate to your client's trust store in order to establish the HTTPS connection between client & proxy. The proxy server will not accept plaintext requests.
 * sjsample.p12
 * sjsample.cer
